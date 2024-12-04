@@ -1,42 +1,362 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  margin: 0;
+  padding: 0px;
+  font-family: sans-serif;
+  list-style: none;
+}
+
+
+.primary_heading {
+  font-size: 2.75rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.content_text {
+  color: #333;
+  font-size: 1.125rem;
+}
+
+.secondary_heading {
+  font-size: 1.75rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* ----------------- NAVBAR */
+
+nav {
+  display: flex;
+  justify-content: center;
+
+}
+
+.navbar {
+  display: flex;
+  backdrop-filter: blur(10px);
+  background-color: #ff020221;
+  justify-content: space-between;
+  width: 90%;
+  border-radius: 35px;
+  margin: 12px;
+  align-items: center;
+  position: fixed;
+}
+
+.nav_links li {
+  display: inline;
+  margin: 0px 15px;
+}
+
+.nav_links li:hover {
+  color: #ff5930;
+  transition: 0.2s;
+}
+
+.left img {
+  border-radius: 30px;
+  width: 45px;
+  margin-left: 10px;
+}
+
+.mid {
+  margin: 20px 0px;
+}
+
+
+.right {
+  padding: 8px 20px;
+}
+
+
+/* ----------------- PRIMARY_BTN--- */
+
+.primary_btn {
+  display: flex;
+  align-items: center;
+  background-color: #ff5930;
+  padding: 4px 8px;
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  width: 123px;
+}
+
+.primary_btn img {
+  background-color: rgb(255, 255, 255);
+  padding: 9px 12px;
+  border-radius: 28px;
+  width: 12px;
+  rotate: 50deg;
+  transition: 0.8s;
+}
+
+.primary_btn img:hover {
+  rotate: 90deg;
+  transition: 0.7s;
+}
+
+.primary_btn span {
+  padding: 10px;
+}
+
+
+
+
+
+
+/* --------- PRIMARY BUTTON VARIANT (for Hire From us) */
+
+.primary_btn_variant {
+  display: flex;
+  align-items: center;
+  background-color: #ff5930;
+  padding: 4px 8px;
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  width: 150px;
+}
+
+.primary_btn_variant img {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 12px;
+  border-radius: 28px;
+  width: 12px;
+  rotate: 50deg;
+  transition: 0.8s;
+}
+
+.primary_btn_variant img:hover {
+  rotate: 90deg;
+  transition: 0.7s;
+}
+
+.primary_btn_variant span {
+  padding: 10px 8px;
+}
+
+
+
+
+
+
+
+/* ----------------------- LANDING BANNER ---- */
+
+#landing {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.landing_banner {
+  margin-top: 80px;
+}
+
+.landing_header {
+  font-size: 60px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.landing_header span {
+  color: #ff5930;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.landing_para {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.landing_ratings {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
 }
 
-.card {
-  padding: 2em;
+.rating_arrow {
+  rotate: 10deg;
+  padding-right: 15px;
 }
 
-.read-the-docs {
-  color: #888;
+.ratings_mid_line {
+  background-color: #ff59309e;
+  width: 1px;
+  height: 40px;
+  margin: 0px 2rem;
+}
+
+/* ******** landing > Get Hired By SLider */
+
+.get_hired_by {
+  margin-top: 25px;
+  mask: linear-gradient(to right, #0000, #000 47% 26%, #0000) border-box no-clip;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.get_hired_by p {
+  text-align: center;
+  color: #ff5930;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.slide_container {
+  padding-top: 10px;
+
+}
+
+.get_hired_by_img {
+  width: 60px;
+  border-radius: 50px;
+  margin: 0 5px;
+  transform: translateX(-39px);
+}
+
+
+
+/* --------- Iframe YOUTUBE  */
+
+.iframe_AD {
+  width: 500px;
+  margin: auto;
+  margin-top: 90px;
+}
+
+iframe {
+  width: 500px;
+  height: 400px;
+}
+
+
+/* ------ Scroll Couse CARDS --------------- */
+.course_cards_scroll {
+  padding: 0px 80px;
+  margin-top: 80px;
+  display: flex;
+}
+
+.course_cards_scroll_left {
+  /* background-color: #ff5930; */
+  width: 50%;
+  padding-top: 40px;
+}
+
+.primary_heading>p>span {
+  color: #fe6337;
+}
+
+.content_text p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-right: 150px;
+  line-height: 1.9rem;
+  color: rgb(34, 34, 34);
+}
+
+
+/* ************** Scroll Card ***** */
+
+.course_cards_scroll_right {
+  width: 50%;
+}
+
+.scroll_card {
+  background-image: radial-gradient(circle at 100% 100%, #f088d4, #fff);
+  height: 300px;
+  width: 500px;
+  border: 1px solid rgba(192, 34, 255, 0.226);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.course_cards_inner_card {
+  display: flex;
+}
+
+.inner_card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px 13px;
+}
+
+.inner_card img {
+  padding-right: 10px;
+}
+
+.card_list span {
+  padding-left: 20px;
+}
+
+.card_list {
+  margin-top: 25px;
+}
+
+
+/* ------------ Hiring Partners ---- */
+
+
+
+
+.hiring_partners {
+  background-image: url("https://cdn.prod.website-files.com/660b8797bc7ef434f6a3c823/66fd8cfd484955c3efd5b222_Yellow%20and%20Black%20Modern%20How%20To%20Make%20YouTube%20Thumbnail.png"), linear-gradient(180deg, #00deb9f0, #ffef93);
+  background-position: 50%, 0 0;
+  background-size: cover, auto;
+  height: 400px;
+  margin: 50px 0px;
+  padding: 0px 50px;
+  display: flex;
+  align-items: center;
+}
+
+.hiring_partners_left {
+  width: 50%;
+}
+
+
+/* ******* Hiring Partners RIGHT ** */
+
+
+
+.hiring_partner {
+  width: 120px;
+  height: 120px;
+  /* background-color: #f088d4; */
+  border: 1px solid #fe6237c6;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+}
+
+.hiring_partner img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.hiring_partner img:hover {
+  width: 120px;
+  height: 120px;
+  transition: 0.2s;
+}
+
+.hiring_partners_right {
+  mask: linear-gradient(to right, #0000, #000 12% 83%, #0000);
+  height: 44vh;
+}
+
+.hiring_partners_right_top {
+  display: flex;
+}
+
+.hiring_partners_right_bottom {
+  display: flex;
+  padding-right: 20px;
 }
